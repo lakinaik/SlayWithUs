@@ -35,3 +35,17 @@ searchbtn.addEventListener('click',(e)=>{
     e.preventDefault
     searchBox.classList.toggle("open");
 })
+// ============Dark Mode ==============
+ let body = document.querySelector("body");
+ let dark = document.getElementById("dark");
+ let bright = document.getElementById("bright");
+
+ dark.addEventListener('click',()=>{
+    body.classList.toggle("darkMode");
+    if(body.classList("darkMode")){
+        dark.className("bi bi-brightness-high");
+    }
+    else{
+        dark.className("bi bi-moon");
+    }
+ })
