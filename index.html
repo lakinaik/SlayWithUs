@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <title>SlayWithUs.</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
@@ -15,6 +15,10 @@
 </head>
 
 <body>
+  <!-- ========Scroll Up btn============ -->
+  <span class="scroll-up">
+    <button><i class="bi bi-arrow-up"></i>
+    </button></span>
   <!-- Header  -->
   <header class="container-fluid header-wrapper">
     <div class="row m-0 p-0">
@@ -58,7 +62,7 @@
             <ul class="navlist d-flex gap-4 m-0">
               <li class="navlink active"><a href="index.html">Home</a></li>
               <li class="navlink position-relative blog">
-                <a href="blog.html">blog<img src="./images/down-arrorw.png" alt="png" class="img-fluid mx-1"
+                <a href="#">blog<img src="./images/down-arrorw.png" alt="png" class="img-fluid mx-1"
                     width="15" />
                 </a>
                 <ul class="position-absolute drop-down p-3">
@@ -132,13 +136,14 @@
                 </div>
               </div>
             </div>
-              <i class="bi bi-moon" id="dark"></i>
-              <i class="bi bi-brightness-high" id="bright"></i>
-            <i class="bi bi-search" id="search"></i>
+            <div class="mode d-inline">
+              <i class="bi bi-moon mx-2"></i>
+            </div>
+            <i class="bi bi-search mx-2" id="search"></i>
             <div class="search-box position-absolute">
               <input type="text" name="search" placeholder="Search..." id="search-box" autocomplete="off">
               <button>
-                <i class="bi bi-search pe-md-2"></i>
+                <i class="bi bi-search pe-md-2 mx-2"></i>
               </button>
             </div>
           </div>
@@ -240,7 +245,7 @@
     </section>
     <!-- ===============Work Section========== -->
     <section class="work-wrapper container-fluid">
-      <section class="first-section row justify-content-sm-between justify-content-center">
+      <section class="first-section row justify-content-lg-between justify-content-center">
         <div class="col-lg-6 col left-text text-center text-lg-start">
           <h3 class="text-center my-3">How It Works</h3>
           <p class="text-start">To start with, you have to fill a questionnaire in-order for us to get a
@@ -254,7 +259,7 @@
           <img src="./images/work-section.jpg" alt="image" width="400" class="img-fluid">
         </div>
       </section>
-      <section class="second-section row justify-content-sm-between justify-content-center my-3">
+      <section class="second-section row justify-content-lg-between justify-content-center my-3">
         <div class="col-lg-6 col-10 right-image">
           <div class="img-box">
             <img src="./images/computer.jpg" alt="image" class="img-fluid">
@@ -294,7 +299,7 @@
     <div class="story-wrapper container-fluid my-4">
       <h2 class="section-heading text-center">SLAYERS STORIES</h2>
       <div class="row">
-        <div class="col-lg-4 story-box">
+        <div class="col-lg-4 col-md-6 story-box">
           <a href="#">
             <div class="img-wrapper position-relative">
               <img
@@ -309,7 +314,7 @@
               <p class="upload-details"><span>Slaywithus</span> | <span>5 June 2023</span></p>
           </div>
         </div>
-        <div class="col-lg-4 story-box">
+        <div class="col-lg-4 col-md-6 story-box">
           <a href="#">
             <div class="img-wrapper position-relative">
               <img
@@ -323,7 +328,7 @@
               <button class="bookmark-btn "><i class="bi bi-bookmark"></i></button>
           </div>
         </div>
-        <div class="col-lg-4 story-box">
+        <div class="col-lg-4 col-md-6 story-box">
           <a href="#">
             <div class="img-wrapper position-relative">
               <img src="https://slaywithus.com/wp-content/uploads/2023/05/a2-370x250.png" alt="image" class="img-fluid">
@@ -336,7 +341,7 @@
               <p class="upload-details my-3"><span>Slaywithus</span> | <span>2 June 2023</span></p>
           </div>
         </div>
-        <div class="col-lg-4 story-box">
+        <div class="col-lg-4 col-md-6 story-box">
           <a href="#">
             <div class="img-wrapper position-relative">
               <img
@@ -351,7 +356,7 @@
               <p class="upload-details my-3"><span>Slaywithus</span> | <span>2 June 2023</span></p>
           </div>
         </div>
-        <div class="col-lg-4 story-box">
+        <div class="col-lg-4 col-md-6 story-box">
           <a href="#">
             <div class="img-wrapper position-relative">
               <img
@@ -463,11 +468,11 @@
         <h2 class="footer-heading text-lg-start text-center">QUICK LINKS</h2>
         <ul class="footer-link ps-0">
           <li class="link"><a href="index.html">home</a></li>
-          <li class="link"><a href="index.html">About us</a></li>
+          <li class="link"><a href="about.html">About us</a></li>
           <li class="link"><a href="index.html">blog</a></li>
           <li class="link"><a href="index.html">questionnaire</a></li>
           <li class="link"><a href="index.html">contact us</a></li>
-          <li class="link"><a href="index.html">privacy policy</a></li>
+          <li class="link"><a href="privacy-policy.html">privacy policy</a></li>
         </ul>
       </div>
       <div class="col-lg-3">

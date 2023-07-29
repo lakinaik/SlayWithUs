@@ -8,18 +8,18 @@
   box-sizing: border-box;
 }
 
-:root {
-  --bg-color: (#000000);
-  --text-color: (#a7a7a7);
+:root{
+  --first-color: (#a7a7a7);
+  --second-color: (#000000);
   --pink: (#ffc2c2);
   --text-font: "Roboto", sans-serif;
   --heading-font: "Jost", sans-serif;
   --third-font: "Cinzel", serif;
   --fourth-font: "PT Sans Narrow", sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 a {
@@ -29,11 +29,52 @@ a {
 ul li {
   list-style: none;
 }
-.darkMode{
-    background-color: #1f1d1d;
-    color: white;
+
+.bredcrumb a,
+.bredcrumb span{
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  font-size: .8rem;
+  transition: all .3s;
+}
+.bredcrumb a:hover{
+  color: #c06804;
+}
+/* ===========scrollup======== */
+.scroll-up{
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  background-color: #665f5f;
+  animation: show .6s;
+  display: none;
+  z-index: 99;
 }
 
+.scroll-up button{
+  background-color: #665f5f;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  padding: 4px 8px;
+  transition: all .4s;
+}
+.scroll-up button:hover{
+  background-color: #a7a7a7;
+}
+
+.darkMode{
+    background-color: #1f1d1d;
+    color: white !important;
+}
+body.darkMode .story-box a,
+body.darkMode .story-box p,
+body.darkMode .story-box button,
+body.darkMode p{
+  color: white !important;
+}
 #bright{
     display: none;
 }
@@ -139,9 +180,9 @@ ul li {
   letter-spacing: 1px;
   position: absolute;
   right: -60px;
-  top: 40px;
+  top: 30px;
   background-color: white;
-  border-top: 4px solid #000;
+  border-top: 20px solid #000;
   width: 400px;
   display: none;
   animation: show 0.4s;
@@ -666,7 +707,7 @@ footer {
   background-position: center;
   height: 100%;
   color: white;
-  padding: 40px 40px 10px 20px;
+  padding: 30px 40px 10px 20px;
 }
 
 footer .footer-heading {
@@ -700,4 +741,49 @@ footer a:hover {
   font-size: 15px;
   color: white;
   line-height: 26px;
+}
+
+
+/* ==============About page===============
+ */
+
+ body.darkMode .about-us,
+ body.darkMode p,
+ body.darkMode .bredcrumb a,
+ body.darkMode .bredcrumb span{
+ color:  white !important;
+ }
+ 
+ .about-us{
+   font-family: "Cinzel", sans-serif;
+   color: #111111;
+ }
+ .about-heading{
+     font-size: 2.8rem;
+     font-weight: 400;
+ }
+ .sub-heading{
+     font-weight: 400;
+     font-size: 3.4rem;
+ }
+ .about-us p{
+     font-size: 20px;
+     line-height: 34px;
+   font-family: "Cormorant Garamond", serif !important;
+   font-weight: 400;
+  }
+  
+  /* ===========privacy policy=============  */
+  .privacy{
+      font-weight: 400;
+      font-size: 1.5rem;
+    font-family: "Cormorant Garamond", serif !important;
+}
+.privacy h4{
+  font-family: "Cinzel", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+.privacy p{
+  font-size: 1.1rem;
 }

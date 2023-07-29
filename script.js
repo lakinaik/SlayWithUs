@@ -37,15 +37,37 @@ searchbtn.addEventListener('click',(e)=>{
 })
 // ============Dark Mode ==============
  let body = document.querySelector("body");
- let dark = document.getElementById("dark");
- let bright = document.getElementById("bright");
-
- dark.addEventListener('click',()=>{
+ let mode  = document.querySelector(".mode");
+ mode.addEventListener('click',()=>{
     body.classList.toggle("darkMode");
-    if(body.classList("darkMode")){
-        dark.className("bi bi-brightness-high");
+    if(body.classList.contains("darkMode")){
+        mode.innerHTML = `<i class="bi bi-brightness-high"></i>`
     }
     else{
-        dark.className("bi bi-moon");
+        mode.innerHTML = `<i class="bi bi-moon"></i>`
     }
  })
+
+
+
+//  =======scroll up ============
+
+let scrollUp = document.querySelector(".scroll-up");
+
+window.addEventListener('scroll', checkHeight);
+
+function checkHeight(){
+if(window.scrollY > 400){
+    scrollUp.style.display = "block"
+}
+else{
+    scrollUp.style.display = "none"
+}
+}
+
+scrollUp.addEventListener('click', ()=>{
+    window.scrollTo({
+        top : 0,
+        behavior : "smooth"
+    })
+})
