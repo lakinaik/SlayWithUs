@@ -71,3 +71,15 @@ scrollUp.addEventListener('click', ()=>{
         behavior : "smooth"
     })
 })
+
+
+// =========active navbar============
+
+let navlinks = document.querySelectorAll(".navlink > a");
+let navitem = document.querySelectorAll(".navlink");
+navlinks.forEach((element)=>{
+    element.addEventListener('click',(e)=>{
+        e.preventDefault()
+        
+    })
+})

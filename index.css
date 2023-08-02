@@ -23,7 +23,7 @@ html {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 ul li {
@@ -62,7 +62,7 @@ ul li {
   transition: all .4s;
 }
 .scroll-up button:hover{
-  background-color: #a7a7a7;
+  background-color: #1b1b1b;
 }
 
 .darkMode{
@@ -132,7 +132,7 @@ body.darkMode p{
 .navbar {
   background-color: #000000;
   width: 100%;
-  padding: 10px 110px;
+  padding: 10px 110px !important;
   position: relative;
 }
 
@@ -145,7 +145,7 @@ body.darkMode p{
   background-color: white;
   padding: 8px 0px;
   right: 120px;
-  top: 66px;
+  top: 54px;
   border-top: 2px solid #333331;
   display: none;
   animation: show 0.3s;
@@ -173,18 +173,18 @@ body.darkMode p{
   }
 }
 
-/* ========trendin============= */
+/* ========trending============= */
 .trending {
   font-family: "Cinzel", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   position: absolute;
   right: -60px;
-  top: 30px;
+  top: 24px;
   background-color: white;
   border-top: 20px solid #000;
   width: 400px;
-  display: none;
+  display: none !important;
   animation: show 0.4s;
 }
 
@@ -207,10 +207,10 @@ body.darkMode p{
 }
 .trending .trending-text a:hover {
   color: #d68528;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .trending-icon:hover .trending {
-  display: block;
+  display: block !important;
 }
 .trending .trending-text span {
   font-size: 0.8rem;
@@ -270,7 +270,7 @@ body.darkMode p{
   color: white;
   text-transform: capitalize;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: "Jost", sans-serif !important;
   transition: all 0.3s;
 }
 
@@ -350,8 +350,8 @@ body.darkMode p{
     font-size: 1.2rem;
   }
   .search-box {
-    right: 10px;
-    top: 78px;
+    right: 120px;
+    top: 90px;
   }
   .trending-icon{
     display: none;
@@ -364,7 +364,7 @@ body.darkMode p{
   }
 
   .navbar {
-    padding: 4px 10px;
+    padding: 4px 10px !important;
     border-top: 2px solid #d68528;
   }
 
@@ -384,6 +384,23 @@ body.darkMode p{
   .search-box {
     right: 10px;
     top: 74px;
+  }
+  .search-box input {
+    width: 300px;
+    padding: 0;
+    border: none;
+  }
+  h4{
+    font-size: 1.8rem !important;
+  }
+  .section-heading::before{
+    display: none;
+  }
+  .section-heading::after{
+    display: none;
+  }
+  .section-heading{
+    text-decoration: underline;
   }
 }
 
@@ -558,9 +575,10 @@ body.darkMode p{
   font-family: "Jost", sans-serif;
   margin: 40px 0;
   position: relative;
+  text-decoration: underline;
 }
 
-.section-heading::before {
+/* .section-heading::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -579,7 +597,7 @@ body.darkMode p{
   background-color: #000000;
   width: 50px;
   height: 1px;
-}
+} */
 
 .story-wrapper .img-wrapper {
   width: 100%;
@@ -625,7 +643,7 @@ body.darkMode p{
 
 .story-details span a:hover {
   color: #cc893d;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .bookmark-btn {
@@ -668,19 +686,21 @@ body.darkMode p{
 }
 
 .service .image-wrapper {
-  width: 100%;
-  height: 500px;
   transition: all 0.5s;
+  background-color: red;
 }
 
 .service .image-wrapper:hover {
   transform: translateY(10px);
 }
-
-.service .image-wrapper img {
+.service .image-wrapper a{
   width: 100%;
   height: 100%;
 }
+/* .service .image-wrapper a img {
+  max-width: 100%;
+  max-height: 100%;
+} */
 
 .service-title {
   text-decoration: underline;
